@@ -1,4 +1,4 @@
-/* ---------- Basic reset ---------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ img {
   display: block;
 }
 
-/* ---------- Button ---------- */
+
 .button {
   display: inline-block;
   background-color: orangered;
@@ -34,7 +34,7 @@ img {
   background-color: darkorange;
 }
 
-/* ---------- 1. Navbar (Flexbox) ---------- */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@ img {
   text-align: right;
 }
 
-/* ---------- 2. Hero ---------- */
+
 .hero {
   background-color: gray;
   background-image: url("https://static.wixstatic.com/media/11062b_305fe0ddbe054ac0a0d32d4154e7b6a4f000.jpg/v1/fill/w_1046,h_377,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_305fe0ddbe054ac0a0d32d4154e7b6a4f000.jpg");
@@ -93,7 +93,7 @@ img {
   text-shadow: 2px 2px 6px black;
 }
 
-/* ---------- 3 & 4. About sections (Flexbox, 2 columns) ---------- */
+
 .section {
   padding: 60px 20px;
 }
@@ -130,9 +130,10 @@ img {
 .button-area {
   text-align: center;
   margin-top: 40px;
+  
 }
 
-/* ---------- 5. Footer (Grid, 4 columns) ---------- */
+
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -156,9 +157,9 @@ img {
   color: orangered;
 }
 
-/* ---------- Responsive: tablets and phones ---------- */
+
 @media (max-width: 768px) {
-  /* Navbar stacks and centers */
+  
   .navbar {
     flex-direction: column;
     gap: 15px;
@@ -180,7 +181,7 @@ img {
     gap: 15px;
   }
 
-  /* Hero text gets smaller */
+  
   .hero h1 {
     font-size: 36px;
   }
@@ -189,22 +190,22 @@ img {
     font-size: 18px;
   }
 
-  /* 2-column sections stack vertically */
+  
   .about {
     flex-direction: column;
     gap: 25px;
   }
 
-  /* Footer goes to 2 columns */
+  
   .footer {
     grid-template-columns: 1fr 1fr;
     padding: 30px 20px;
   }
 }
 
-/* ---------- Responsive: small phones ---------- */
+
 @media (max-width: 500px) {
-  /* Footer goes to 1 column */
+  
   .footer {
     grid-template-columns: 1fr;
   }

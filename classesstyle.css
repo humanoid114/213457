@@ -1,0 +1,348 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #0b0b0b;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+  
+    .header {
+      background: #141414;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: "Arial Black", Impact, Arial, sans-serif;
+      font-size: 28px;
+      color: #ffffff;
+      margin-right: 10px;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav a {
+      color: #ffffff;
+      font-size: 14px;
+      padding: 4px 16px;
+      border-left: 1px solid #444444;
+    }
+
+    .nav a:first-child {
+      border-left: none;
+    }
+
+    .nav a.active {
+      text-decoration: underline;
+    }
+
+    .header-right {
+      display: flex;
+  align-items: center;
+      color: #e8573a;
+    }
+
+ .user-icon {
+      width: 22px;
+         height: 22px;
+      margin-right: 8px;
+    }
+
+    .header-right a {
+      color: #e8573a;
+      font-size: 14px;
+    }
+
+    .login {
+      margin-right: 10px;
+    }
+
+    .cart {
+      margin-right: 20px;
+    }
+
+    .membership {
+      background: #e8573a;
+      color: #141414 !important;
+      padding: 8px 16px;
+      border-radius: 2px;
+      font-size: 13px;
+    }
+
+
+    .hero {
+      background: #0b0b0b;
+      text-align: center;
+      padding: 50px 20px 40px 20px;
+    }
+
+    .hero h1 {
+      font-family: "Arial Black", Impact, Arial, sans-serif;
+         font-size: 40px;
+ text-transform: uppercase;
+      color: #ffffff;
+      letter-spacing: -1px;
+    }
+
+    
+    .classes {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 10px 10px 10px;
+    }
+
+    .card {
+      display: flex;
+      background: #f4f2ee;
+      color: #141414;
+      margin-bottom: 10px;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .card.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .card img {
+   width: 50%;
+    height: 322px;
+    object-fit: cover;
+      display: block;
+    }
+
+    .card-text {
+      width: 50%;
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-text h2 {
+      font-family: "Arial Black", Impact, Arial, sans-serif;
+      font-size: 26px;
+      color: #141414;
+      margin-bottom: 36px;
+    }
+
+    .price {
+      font-size: 11px;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      background: #e8573a;
+      color: #141414;
+      font-size: 11px;
+      padding: 7px 12px;
+      border-radius: 2px;
+      align-self: flex-start;
+    }
+
+    
+    .footer {
+      background: #1a1a1a;
+      padding: 20px 20px 20px 20px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-family: "Arial Black", Impact, Arial, sans-serif;
+      font-size: 70px;
+      color: #e8573a;
+    letter-spacing: -3px;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .footer-logo span {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+    }
+
+    .trial-btn {
+      display: inline-block;
+      background: #f4f2ee;
+      color: #141414;
+      font-size: 14px;
+      padding: 12px 36px;
+      border-radius: 3px;
+    }
+
+    .footer-col {
+      border-left: 1px solid #444444;
+      padding: 0 20px;
+    }
+
+    .footer-col h3 {
+      font-family: "Arial Black", Impact, Arial, sans-serif;
+      font-size: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    .footer-col p,
+    .footer-col li {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #ffffff;
+    }
+
+    .footer-col li.active {
+      text-decoration: underline;
+    }
+
+    .social {
+      display: flex;
+      margin-top: 30px;
+    }
+
+    .social-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      background: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-icon svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 1100px;
+      margin: 40px auto 0 auto;
+      font-size: 13px;
+    }
+
+    .footer-bottom a,
+    .footer-bottom p {
+      color: #ffffff;
+      padding: 4px 18px;
+      border-left: 1px solid #444444;
+    }
+
+    .footer-bottom a:first-child {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    .footer-bottom p a {
+      border-left: none;
+      padding: 0;
+      text-decoration: underline;
+    }
+
+    
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header-left {
+        flex-direction: column;
+        margin-bottom: 14px;
+      }
+
+      .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .card,
+      .card.reverse {
+        flex-direction: column;
+      }
+
+      .card img {
+        width: 100%;
+      }
+
+      .card-text {
+        width: 100%;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-logo {
+        font-size: 56px;
+      }
+
+      .footer-col {
+        border-left: none;
+        padding: 30px 0 0 0;
+      }
+
+      .footer-col h3 {
+        margin-bottom: 14px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-bottom a,
+      .footer-bottom p {
+        border-left: none;
+        padding: 6px 0;
+      }
+    }
